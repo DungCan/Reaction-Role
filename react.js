@@ -106,7 +106,7 @@ client.on('messageReactionRemove', async (reaction, user) => {
   }
 })
  
-client.login(config.token)
+client.login(client.config.token)
 
 
  
