@@ -75,5 +75,6 @@
         message.channel.send(embed)
          client.channels.cache.get(`${channel.id}`).messages.fetch(`${args[1]}`).then(a => {
              a.react(args[3])
+          .catch(error => message.reply('I can\'t give role please check my permission or ur highest role is higher than mine'))	
          })    
     }}
